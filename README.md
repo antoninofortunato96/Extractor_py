@@ -5,7 +5,9 @@ Extractor_py è un progetto di cyber security che nasce nel tempo libero. Il pro
 All'interno del repository si trovano i seguenti files:
 
 -extractor.py: deve essere eseguito nella macchina client(vittima)
+
 -server.py: deve essere eseguito nella macchina server(attaccante)
+
 -upload.php: deve essere caricato in un server Apache o Nginx(attaccante)
 
 Extractor_py invia una copia di tutti i files con estensione specificata nel codice sorgente extractor.py al server in cui risiede il file upload.php.
