@@ -11,6 +11,6 @@ All'interno del repository si trovano i seguenti files:
 -upload.php: deve essere caricato in un server Apache o Nginx(attaccante)
 
 Extractor_py invia una copia di tutti i files con estensione specificata nel codice sorgente extractor.py al server in cui risiede il file upload.php.
-Instaura una connessione tcp con shell con il server, vi è atttualmente una funzione che funge da ramnsoware che cripta tutti files. Altre funzioni possono essere aggiunte ampliando il codice.
+Instaura una connessione tcp con shell verso il server, vi è atttualmente una funzione che funge da ransomware che cripta tutti files. Altre funzioni possono essere aggiunte ampliando il codice.
 # Responsabilità
 Il progetto viene rilasciato solo per fini didattici. Non mi assumo nessuna responsabilità sul suo utilizzo. Aceddere senza autorizzazione in un sistema è punibile penalmente.
